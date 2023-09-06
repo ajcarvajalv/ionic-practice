@@ -1,17 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Toast</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button id="open-toast" expand="block">Abrir</ion-button>
+    <p id="message">Este ejemplo de toast usa triggers para abrir automáticamente un toast cuando se da clic sobre el botón.</p>
+    <ion-toast trigger="open-toast" message="Este toast desaparecerá después de 5 segundos :&#41;" [duration]="5000"></ion-toast>
+  </ion-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
